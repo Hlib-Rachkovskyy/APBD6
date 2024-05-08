@@ -4,5 +4,5 @@ namespace APBD6.Service;
 
 public interface IWarehouseService
 {
-    public Task<int> InsertOrder(Order order);
+    public Task<int> InsertOrder(ReceiveData receiveData);
 }

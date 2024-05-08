@@ -1,10 +1,16 @@
-﻿namespace APBD6.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
+
+namespace APBD6.Models;
 
 public class Order
 {
+    [Required]
     public int IdOrder { get; set; }
-    private int IdProduct { get; set; }
-    private int Amount { get; set; }
-    private DateTime CreatedAt { get; set; }
-    private DateTime FulfiledAt { get; set; }
+    public int IdProduct { get; set; }
+    public int Amount { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime? FulfilledAt { get; set; }
+
+
 }

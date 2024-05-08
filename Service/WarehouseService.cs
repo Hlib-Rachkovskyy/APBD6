@@ -10,8 +10,8 @@ public class WarehouseService : IWarehouseService
     {
         _warehouseRepository = warehouseRepository;
     }
-    public async Task<int> InsertOrder(Order order)
+    public async Task<int> InsertOrder(ReceiveData receiveData)
     {
-        return await _warehouseRepository.InsertOrder(order);
+        return await _warehouseRepository.InsertOrder(receiveData);
     }
 }
